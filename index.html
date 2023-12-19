@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurant Billing App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="table-section">
+        <h2>Tables</h2>
+        <div class="search-box">
+          <input type="text" placeholder="Search tables..." id="search-box" />
+        </div>
+        <div class="table-cards">
+          <div class="table-card" id="table1">
+            <h3>Table 1</h3>
+            <p class="item-count">0 items | <br /></p>
+            <p>Total price in $ :-</p>
+            <p class="total-price">0.00</p>
+          </div>
+
+          <div class="table-card" id="table2">
+            <h3>Table 2</h3>
+            <p class="item-count">0 items | <br /></p>
+            <p>Total price in $ :-</p>
+            <p class="total-price">0.00</p>
+          </div>
+          <div class="table-card" id="table3">
+            <h3>Table 3</h3>
+            <p class="item-count">0 items |</p>
+            <p>Total price in $ :-</p>
+            <p class="total-price">0.00</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal" id="modal">
+            <div class="modal-content">
+                <button class="close">&times;</button>
+                <h2>Order Details</h2>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody id="modal-body">
+                        <h5>this is body of modal</h5>
+                    <!-- Modal table rows will be added dynamically via JavaScript -->
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td>Total:</td>
+                        <td id="modal-total">$0.00</td>
+                        <td></td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+      </div>
+
+      <div class="menu-section">
+        <h2>Menu</h2>
+        <div class="menu-search">
+          <input type="text" placeholder="Search menu..." id="menu-search" />
+        </div>
+
+        <div class="item-card" draggable="true" id="item-1">
+          <h3>Chicken Biryani</h3>
+          <p>$10</p>
+        </div>
+        <div class="item-card" draggable="true" id="item-2">
+          <h3>French Fries</h3>
+          <p>$15</p>
+        </div>
+        <div class="item-card" draggable="true" id="item-3">
+          <h3>Chicken-Tikka</h3>
+          <p>$8</p>
+        </div>
+        <div class="item-card" draggable="true" id="item-4">
+          <h3>Burgur</h3>
+          <p>$12</p>
+        </div>
+        <div class="item-card" draggable="true" id="item-5">
+          <h3>Momos</h3>
+          <p>$5</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
